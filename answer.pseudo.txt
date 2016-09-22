@@ -1,0 +1,15 @@
+#include <iostream>
+#include <ctime> // Needed for the true randomization.
+#include <cstdlib> 
+using namespace std;
+
+int main ()
+{
+	int xRan;
+	srand( time(0));
+	
+	xRan=(rand()%15)+6;// 15 is the highest and 6 is the lowest. 
+	cout << "Shows a random number between 6-15: " << xRan;	
+	
+	return 0;
+}
